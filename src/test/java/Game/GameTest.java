@@ -58,9 +58,10 @@ class GameTest {
         game.register(alex);
 
 
-        Assertions.assertThrows(NotRegisteredException.class,()-> game.round("Мария","Alex")
+        Assertions.assertThrows(NotRegisteredException.class, () -> game.round("Мария", "Alex")
         );
     }
+
     @Test
     void SecondPlayerNotFound() {
         Player nikolay = new Player(1, "Nikolay", 100);
@@ -71,7 +72,7 @@ class GameTest {
         game.register(alex);
 
 
-        Assertions.assertThrows(NotRegisteredException.class,()-> game.round("Nikolay","Alexandr")
+        Assertions.assertThrows(NotRegisteredException.class, () -> game.round("Nikolay", "Alexandr")
         );
     }
 }
