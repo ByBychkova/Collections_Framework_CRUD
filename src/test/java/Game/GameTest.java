@@ -27,8 +27,8 @@ class GameTest {
         game.register(nikolay);
         game.register(alex);
 
-        int actual = game.round("Nikolay", "Alex");
-        int expected = 1;
+        int actual = game.round("Alex", "Nikolay");
+        int expected = 2;
         Assertions.assertEquals(expected, actual);
 
 
